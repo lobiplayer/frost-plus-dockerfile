@@ -1,5 +1,5 @@
 # Use the specified base image
-FROM registry.redhat.io/jboss-webserver-6/jws60-openjdk17-openshift-rhel8
+FROM registry.redhat.io/jboss-webserver-6/jws60-openjdk17-openshift-rhel8:latest
 
 # Set the working directory
 WORKDIR /opt/jws-6.0/tomcat/webapps

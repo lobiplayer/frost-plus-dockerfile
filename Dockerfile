@@ -1,5 +1,5 @@
 # Use the specified base image
-FROM jws60-openjdk17-openshift-rhel8
+FROM image-registry.openshift-image-registry.svc:5000/openshift/jws60-openjdk17-openshift-rhel
 
 # Set the working directory
 WORKDIR /opt/jws-6.0/tomcat/webapps
@@ -11,4 +11,5 @@ COPY ../frost/FROST-Server.HTTP/target/FROST-Server.HTTP-2.3.2.war .
 EXPOSE 8080
 
 # Command to run the Tomcat server
-CMD ["catalina.sh", "run"]
+# CMD ["catalina.sh", "run"]
+CMD ["/opt/jws-6.0/tomcat/bin/launch.sh"]

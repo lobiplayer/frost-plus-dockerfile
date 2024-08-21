@@ -14,4 +14,4 @@ EXPOSE 8080
 
 # Command to run the Tomcat server
 # CMD ["catalina.sh", "run"]
-CMD ["/opt/jws-6.0/tomcat/bin/launch.sh"]
+# CMD ["/opt/jws-6.0/tomcat/bin/launch.sh"]
